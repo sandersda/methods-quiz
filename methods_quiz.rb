@@ -9,6 +9,9 @@ end
 
 # TODO - write not_string
 
+def not_string(str)
+
+end
 # TODO - write icy_hot?
 
 # TODO - write closer_to

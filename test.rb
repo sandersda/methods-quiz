@@ -13,3 +13,18 @@ describe "methods_quiz" do
 		end
 	end
 end
+
+	describe 'not_string' do
+		it 'should determine if the sentence does not already start with not and add a not to the front of the sentence.' do
+			not_string('Bilbo Baggins').must_equal('notBilbo Baggins')
+		end
+
+		it 'should not do anything to a string if it already starts with "not"' do
+			not_string('not Bilbo Baggins').must_equal('not Bilbo Baggins')
+		end
+
+		it 'should add a lowercase "not" if there is an uppercase "Not" at the beginning' do
+			not_string('Not Biblo Baggins').must_equal('notNot Bilbo Baggins')
+		end
+
+	end
