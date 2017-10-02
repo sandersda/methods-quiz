@@ -12,7 +12,7 @@ describe "methods_quiz" do
 			has_teen?(9,1245678,-19).must_equal(false)
 		end
 	end
-end
+
 
 	describe 'not_string' do
 		it 'should determine if the sentence does not already start with not and add a not to the front of the sentence.' do
@@ -26,5 +26,19 @@ end
 		it 'should add a lowercase "not" if there is an uppercase "Not" at the beginning' do
 			not_string('Not Bilbo Baggins').must_equal('notNot Bilbo Baggins')
 		end
-
 	end
+
+	describe 'icy_hot?' do
+		it 'should determine if one temperature is below 0 and one is above 100' do
+			icy_hot?(-67890,23456789).must_equal(true)
+		end
+
+		it 'should not be icy hot if both temperatures are icy' do
+			icy_hot?(-678,-567).must_equal(false)
+		end
+
+		it 'should not be icy hot if neither temperatures are icy or hot' do
+			icy_hot?(0,100).must_equal(false)
+		end
+	end
+end

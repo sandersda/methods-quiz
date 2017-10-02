@@ -17,6 +17,10 @@ def not_string(str)
 end
 # TODO - write icy_hot?
 
+def icy_hot?(temp1,temp2)
+
+end
+
 
 # TODO - write closer_to
 
