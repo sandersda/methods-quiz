@@ -38,5 +38,8 @@ end
 # TODO - write two_as_one?
 
 def two_as_one?(int1,int2,int3)
-	
+	if ((int1 + int2) == int3) or ((int2 + int3) == int1) or ((int3+int1) == int2)
+		return true
+	end
+	return false
 end
