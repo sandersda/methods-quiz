@@ -57,6 +57,14 @@ describe "methods_quiz" do
 			two_as_one?(5,5,10).must_equal(true)
 		end
 
+		it 'should determine if any two numbers can add up to the third' do
+			two_as_one?(670,600,70).must_equal(true)
+		end
+
+		it 'should determine if any two numbers can add up to the third' do
+			two_as_one?(5,15,10).must_equal(true)
+		end
+
 		it 'should determine if there\'s no possible combination of two to add up to the third' do
 			two_as_one?(17,5,10).must_equal(false)
 		end
