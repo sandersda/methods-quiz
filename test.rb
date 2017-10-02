@@ -24,7 +24,7 @@ end
 		end
 
 		it 'should add a lowercase "not" if there is an uppercase "Not" at the beginning' do
-			not_string('Not Biblo Baggins').must_equal('notNot Bilbo Baggins')
+			not_string('Not Bilbo Baggins').must_equal('notNot Bilbo Baggins')
 		end
 
 	end
