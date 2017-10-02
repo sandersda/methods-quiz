@@ -36,3 +36,7 @@ def closer_to(target,guess1,guess2)
 end
 
 # TODO - write two_as_one?
+
+def two_as_one?(int1,int2,int3)
+	
+end

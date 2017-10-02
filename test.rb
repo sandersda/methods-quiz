@@ -51,4 +51,14 @@ describe "methods_quiz" do
 			closer_to(10,11,9).must_equal(0)
 		end
 	end
+
+	describe 'two_as_one?' do
+		it 'should determine if any two numbers can add up to the third' do
+			two_as_one?(5,5,10).must_equal(true)
+		end
+
+		it 'should determine if there\'s no possible combination of two to add up to the third' do
+			two_as_one?(17,5,10).must_equal(false)
+		end
+	end
 end
