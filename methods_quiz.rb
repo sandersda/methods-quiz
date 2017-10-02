@@ -1,7 +1,10 @@
   
 # TODO - write has_teen?
 def has_teen?(int1,int2,int3)
-
+	if int1 <= 19 and int1 >= 13 or int2 <= 19 and int2 >= 13 or int3 <= 19 and int3 >= 13
+		return true
+	end
+	return false
 end
 
 # TODO - write not_string
