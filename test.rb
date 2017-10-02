@@ -41,4 +41,14 @@ describe "methods_quiz" do
 			icy_hot?(0,100).must_equal(false)
 		end
 	end
+
+	describe 'closer_to' do
+		it 'should determine out of two guesses which is closer to the target' do
+			closer_to(5,4,7).must_equal(4)
+		end
+
+		it 'should state 0 if both guesses are the same distance apart from the target' do
+			closer_to(10,11,9).must_equal(0)
+		end
+	end
 end

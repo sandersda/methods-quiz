@@ -26,5 +26,8 @@ end
 
 
 # TODO - write closer_to
+def closer_to(target,guess1,guess2)
+
+end
 
 # TODO - write two_as_one?
